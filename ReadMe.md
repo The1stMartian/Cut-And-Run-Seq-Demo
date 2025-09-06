@@ -1,4 +1,4 @@
-# Example Data Visualizations from my Professional Coding Projects
+# Example data visualizations from my professional coding projects
 <i>As much of my coding is proprietary, I made this page to at least demonstrate the outputs</i>
 <i>Presented here: a flow cytometry analysis pipeline</i><br>
 <i>Additional Proprietary Pipeline Demo: [Flow Cytometry Analysis](https://github.com/The1stMartian/Pipeline-Examples)</i>
