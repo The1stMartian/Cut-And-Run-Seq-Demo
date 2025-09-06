@@ -1,9 +1,9 @@
 ![Cut and Run](./media/cutandrun.jpg)
 # Professional Coding Project - Example #2
 
-<i>Because most of the code I've written remains proprietary, I created this page to showcase my experience indirectly via the output data visualizations.<br>
-<i>Presented here: Data visualizations from my Cut-and-Run Seq pipeline</i><br>
-<i>Additional Proprietary Pipeline Demo: [Flow Cytometry Analysis](https://github.com/The1stMartian/Pipeline-Examples)</i>
+- <i>Because most of the code I've written remains proprietary, I created this page to showcase my experience indirectly via the output data visualizations.<br>
+- <i>Presented here: Data visualizations from my Cut-and-Run Seq pipeline</i><br>
+- <i>Additional Proprietary Pipeline Demo: [Flow Cytometry Analysis](https://github.com/The1stMartian/Pipeline-Examples)</i>
 
 ## Project Overview: Cut-and-Run Seq 
 - This pipeline was developed to re-capitulate the cut-and-run experimental analysis by Qin et al. [PMID:36893455](https://pubmed.ncbi.nlm.nih.gov/36893455/)
