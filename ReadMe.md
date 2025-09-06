@@ -5,13 +5,13 @@
 
 # Cut-And-Run Seq
 Technical Overview: 
-- An NGS analysis script in R and utilizing various command-line bioinformatics tools
+- An NGS analysis script written in R, utilizing various command-line bioinformatics tools
 - Purpose: analyze NGS cut-and-run sequencing data
 - Scope: Fastq file QC, mapping, peak detection, and differential binding analysis
-- Outputs: multiple tables including differential binding analysis, and visualization files 
+- Outputs: multiple tables (including differential binding analysis) and visualization files 
 
 ## Steps:
-- Ingest metadata with filepaths, and sample groups
+- Ingests metadata with filepaths and sample groups
 - Determine if reads are SE or PE
 - Run QC on fastq files - FastQC
 - Trim fastq files on quality and adapters - Timmomatic
@@ -37,18 +37,17 @@ Technical Overview:
 	- Comparison of differentially bound regions between original and rerun
 
 ## Rationale:
-- The Cut-and-Run pipeline published by the original authors did not use a docker container, making executiton problematic. The pipeline was re-built with equivalent processing steps using reproducible methods (i.e. containerization of command line tools in a docker container)
+- The Cut-and-Run pipeline published by the original authors did not use a docker container, making executiton problematic. I rebuilt the pipeline with the same/equivalent processing steps and using Docker for reproduciblity. I also built an OmicSoft P-script allowing it to be run vis the OmicSoft GUI.
 
 ## Visual QC:
-- As quantitative data (peak location and abundance values) were not made available by the authors, qualitative measures were required to establish reproducibility.
+<i>As quantitative data (peak location and abundance values) were not made available by the authors, qualitative measures were required to establish reproducibility.</i>
 
 ### Figure 5D
 - The abundance of histone proteins at peak region 1 in the presence/absence of the BMI1 protein shown to affect histone binding in the manuscript.
-- My repeat data are shown below and indicate a similar binding pattern to the published data. 
+- Data from my repeat analysis are shown in the lower part of the figure and indicate a similar binding pattern to the published data. 
 - Red stars indicate two disparities between the re-run and originally published results. Given the other quality control checks and overall similarity between the original and rerun data, I concluded that these point may represent errors in the authors' analysis.
 <br>
 !["Figure 5D"](./media/figure5D.jpg)
-<br>
 
 ### Figure 5E
 - Binding of H3K27me3 and H3K27Ac at region 2 shows differential binding in cells at three different ages (fetal, newborn, and adult) in both the original and rerun.<br>
