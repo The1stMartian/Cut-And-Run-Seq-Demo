@@ -45,8 +45,7 @@ Technical Overview:
 ### Figure 5D
 - The abundance of histone proteins at peak region 1 in the presence/absence of the BMI1 protein shown to affect histone binding in the manuscript.
 - Data from my repeat analysis are shown in the lower part of the figure and indicate a similar binding pattern to the published data. 
-- Red stars indicate two disparities between the re-run and originally published results. Given the other quality control checks and overall similarity between the original and rerun data, I concluded that these point may represent errors in the authors' analysis.
-<br>
+- Red stars indicate two disparities between the re-run and originally published results. Given the other quality control checks and overall similarity between the original and rerun data, I concluded that these point may represent errors in the authors' analysis.<br>
 !["Figure 5D"](./media/figure5D.jpg)
 
 ### Figure 5E
