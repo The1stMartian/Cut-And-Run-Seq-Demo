@@ -1,16 +1,22 @@
-# Example data visualizations from my professional coding projects
-<i>As much of my coding is proprietary, I made this page to at least demonstrate the outputs</i>
-<i>Presented here: a flow cytometry analysis pipeline</i><br>
+![Cut and Run](./media/cutandrun.jpg)
+# Professional Coding Project - Example #2
+
+<i>Because most of the code I've written remains proprietary, I created this page to showcase my experience indirectly via the output data visualizations.<br>
+<i>Presented here: Data visualizations from my Cut-and-Run Seq pipeline</i><br>
 <i>Additional Proprietary Pipeline Demo: [Flow Cytometry Analysis](https://github.com/The1stMartian/Pipeline-Examples)</i>
 
-# Cut-And-Run Seq
-Technical Overview: 
+## Project Overview: Cut-and-Run Seq 
+- This pipeline was developed to re-capitulate the cut-and-run experimental analysis by Qin et al. [PMID:36893455](https://pubmed.ncbi.nlm.nih.gov/36893455/)
+- As the original analysis files (.bam and peak files) were not available from the authors, the analysis had to be repeated
+- Unfortunately, the authors' pipeline had issues with version control, so in the end I had to rebuild it from scratch using similar/equivalent methods. 
+
+## Technical Overview:
 - An NGS analysis script written in R, utilizing various command-line bioinformatics tools
-- Purpose: analyze NGS cut-and-run sequencing data
-- Scope: Fastq file QC, mapping, peak detection, and differential binding analysis
+- Function: analyze NGS cut-and-run sequencing data (simlar to ChIP-Seq)
+- Scope: Fastq QC, mapping, peak detection, and differential binding analysis
 - Outputs: multiple tables (including differential binding analysis) and visualization files 
 
-## Steps:
+## Processing Steps:
 - Ingests metadata with filepaths and sample groups
 - Determine if reads are SE or PE
 - Run QC on fastq files - FastQC
@@ -36,11 +42,11 @@ Technical Overview:
 	- False discovery rate calculation 
 	- Comparison of differentially bound regions between original and rerun
 
-## Rationale:
+## Improvements:
 - The Cut-and-Run pipeline published by the original authors did not use a docker container, making executiton problematic. I rebuilt the pipeline with the same/equivalent processing steps and using Docker for reproduciblity. I also built an OmicSoft P-script allowing it to be run vis the OmicSoft GUI.
 
-## Visual QC:
-<i>As quantitative data (peak location and abundance values) were not made available by the authors, qualitative measures were required to establish reproducibility.</i>
+## Quality Control/Verifiction Method:
+<i>As quantitative data (peak location and abundance values) were not made available by the authors, qualitative measures were required to establish reproducibility. In essence, I remade their figures and observed almost exactly the same results, suggesting my pipeline works properly and that their original analysis was pretty accurate (with a few possible exceptions).</i>
 
 ### Figure 5D
 - The abundance of histone proteins at peak region 1 in the presence/absence of the BMI1 protein shown to affect histone binding in the manuscript.
@@ -61,5 +67,6 @@ Technical Overview:
 
 ## Conclusions
 - While it would be preferable to run a quantitative comparison between the original and re-run data using a Pearson correlation calculation, qualitative analyses were the only option available.
-- Reproducibility between sample replicates was clearly defined using IDR
-- Qualitatively, peak location and general profiles appeared to match the original data quite consistently.
+- Reproducibility between sample replicates was clearly defined using IDR, suggesting internal consistency.
+- Qualitatively, peak location and general profiles appeared to match the original data, strongly suggesting that my pipeline functions properly. 
+- Small disparities between my figures and the author's figure 5D raise the possibilty that there may be minor errors in the manuscript.
