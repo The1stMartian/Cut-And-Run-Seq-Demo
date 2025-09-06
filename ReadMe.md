@@ -1,6 +1,7 @@
-# # Examples Data Visualizations from my Professional Coding Projects
+# Example Data Visualizations from my Professional Coding Projects
+<i>As much of my coding is proprietary, I made this page to at least demonstrate the outputs</i>
 <i>Presented here: a flow cytometry analysis pipeline</i><br>
-<i>Additional Proprietary Pipelines: [Flow Cytometry Analysis](https://github.com/The1stMartian/Pipeline-Examples)</i>
+<i>Additional Proprietary Pipeline Demo: [Flow Cytometry Analysis](https://github.com/The1stMartian/Pipeline-Examples)</i>
 
 # Cut-And-Run Seq
 Technical Overview: 
